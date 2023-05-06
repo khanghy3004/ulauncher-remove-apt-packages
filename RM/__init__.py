@@ -29,7 +29,7 @@ def list(repo, length):
     for names in packageList:
         logger.debug("Package: " + names)
         index = packageList.index(names) + 1
-        packageNamesWithIndex.append(str(index) + " -> " + names.strip())
+        packageNamesWithIndex.append(str(index) + " -> " + names.strip().split("/")[0])
         if index == int(length):
             break
     return packageNamesWithIndex
@@ -37,5 +37,5 @@ def list(repo, length):
 
 def remove(package, extension):
     type_remove = extension.preferences["type-remove"]
-    result = _runRemove(["pkexec", "apt", type_remove, package.split("->")[1].strip().split("/")[0]])
+    result = _runRemove(["pkexec", "apt", type_remove, package.split("->")[1].strip()])
     print(result)
