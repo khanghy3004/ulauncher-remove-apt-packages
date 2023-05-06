@@ -3,6 +3,10 @@
 
 ### Little tool written in python to remove Apt packages using uLauncher.
 
+<p align="center">
+   <img src="https://ulauncher-ext-images-prod.nyc3.digitaloceanspaces.com/github|17218425/2023-05-06T05:03:48.200357.png" />
+</p>
+
 # Installation
 Open uLauncher preferences window -> extensions -> add extension and paste the following url:
 `https://github.com/khanghy3004/ulauncher-remove-apt-packages`
